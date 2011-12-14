@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "sprockets-torquebox-cache/version"
+require "sprockets-torquebox-cache"
 
 Gem::Specification.new do |s|
   s.name        = "sprockets-torquebox-cache"
