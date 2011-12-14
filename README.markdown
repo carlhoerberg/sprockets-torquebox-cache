@@ -1,7 +1,7 @@
-Sprockets Redis Cache
+Sprockets Torquebox Cache
 ====================
 
-A cache store for Sprockets which utilities Redis. 
+A cache store for Sprockets which utilities Torquebox Infinispan Cache. 
 
 Usage
 -----
@@ -9,17 +9,17 @@ Usage
 Gemfile:
 
     gem 'sprockets'
-    gem 'sprockets-cache-redis'
+    gem 'sprockets-torquebox-cache'
     ...
 
 config.ru:
 
     require 'sprockets-cache-redis'
     env = Sprockets::Environment.new
-    env.cache = Sprockets::Cache::RedisStore.new(redis, 'sprockets')
+    env.cache = Sprockets::Cache::Torquebox.new(Torquebox::Infinispan::Cache.new())
     ...
 
-Where the first argument is a Redis connection, and the other (which is optional) is a key_prefix.
+Only pass it an instance of Torquebox::Infinispan::Cache.
 
 License
 -------

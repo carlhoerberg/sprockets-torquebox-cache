@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "sprockets-cache-redis/version"
+require "sprockets-torquebox-cache/version"
 
 Gem::Specification.new do |s|
-  s.name        = "sprockets-cache-redis"
-  s.version     = Sprockets::Cache::Redis::VERSION
+  s.name        = "sprockets-torquebox-cache"
+  s.version     = Sprockets::Cache::Torquebox::VERSION
   s.authors     = ["Carl Hörberg"]
   s.email       = ["carl.hoerberg@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{A Redis cache store for Sprockets}
+  s.summary     = %q{A Torquebox cache store for Sprockets}
   s.description = %q{}
 
-  s.rubyforge_project = "sprockets-cache-redis"
+  s.rubyforge_project = "sprockets-torquebox-cache"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
