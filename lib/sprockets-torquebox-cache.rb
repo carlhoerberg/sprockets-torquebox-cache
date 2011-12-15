@@ -5,7 +5,7 @@ module Sprockets
     #     environment.cache = Torquebox::Infinispan::Cache.new(...)
     #
     class Torquebox
-      VERSION = "0.0.1"
+      VERSION = "0.0.2"
 
       def initialize(cache)
         @cache = cache
@@ -13,7 +13,7 @@ module Sprockets
 
       # Lookup value in cache
       def [](key)
-        @cache.get path_for(key)
+        @cache.get key
       end
 
       # Save value to cache
