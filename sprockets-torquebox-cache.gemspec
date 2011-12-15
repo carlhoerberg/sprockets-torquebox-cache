@@ -5,7 +5,7 @@ require "sprockets-torquebox-cache"
 Gem::Specification.new do |s|
   s.name        = "sprockets-torquebox-cache"
   s.version     = Sprockets::Cache::Torquebox::VERSION
-  s.authors     = ["Carl Hörberg"]
+  s.authors     = ["Carl Hörberg"]
   s.email       = ["carl.hoerberg@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{A Torquebox cache store for Sprockets}

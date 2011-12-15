@@ -13,12 +13,13 @@ module Sprockets
 
       # Lookup value in cache
       def [](key)
-        @cache.get key
+        data = @cache.get key
+        Marshal.load data if data
       end
 
       # Save value to cache
       def []=(key, value)
-        @cache.put key, value
+        @cache.put key, Marshal.dump(value)
         value
       end
     end
